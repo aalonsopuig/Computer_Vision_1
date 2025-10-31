@@ -2,11 +2,22 @@
 """
 Detección de caras con OpenCV y Haar cascade
 
-Este script accede a la cámara del ordenador, detecta la cara más grande en tiempo real,
-y muestra en pantalla su posición relativa junto con un rectángulo sobre la cara.
+Este script utiliza la librería OpenCV para realizar detección facial en tiempo real 
+mediante el clasificador Haar de detección de rostros frontales. Accede a la cámara 
+del ordenador (webcam), procesa los fotogramas de vídeo en escala de grises y 
+aplica el algoritmo de detección Haar Cascade incluido en OpenCV. 
+
+En cada iteración, identifica la cara más grande presente en la imagen, dibuja un 
+rectángulo azul alrededor de ella y calcula su posición relativa respecto al centro 
+del encuadre, mostrando dichas coordenadas en la propia ventana de vídeo. 
+
+El objetivo es ilustrar de forma sencilla el funcionamiento de los clasificadores Haar 
+y de las operaciones básicas de captura y visualización de vídeo en OpenCV, sirviendo 
+como punto de partida para sistemas más avanzados de visión artificial y robótica. 
 
 Autor: Alejandro Alonso Puig + ChatGPT 4.1
 Licencia: Apache 2.0
+Julio 2025
 """
 
 import cv2  # Importamos la librería OpenCV para visión artificial
